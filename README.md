@@ -1,4 +1,4 @@
-# Richey Anime Universe
+# Richey Anime
 
 ## The World That Forgot Richey
 
