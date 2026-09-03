@@ -1,7 +1,6 @@
-/* =========================================
+/* =========================
    RICHEY ANIME UNIVERSE
-   Dark Fantasy / Cinematic Website Theme
-   ========================================= */
+   ========================= */
 
 * {
     margin: 0;
@@ -14,357 +13,282 @@ html {
 }
 
 body {
-    font-family: Georgia, "Times New Roman", serif;
-    background:
-        radial-gradient(circle at top, #24113f 0%, #0b0712 42%, #050509 100%);
-    color: #eee8f5;
-    line-height: 1.7;
-    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0d18;
+    color: #f5f5f7;
+    line-height: 1.6;
 }
 
-/* =========================================
+/* =========================
    HEADER
-   ========================================= */
+   ========================= */
 
 header {
-    background: rgba(5, 4, 10, 0.94);
-    border-bottom: 1px solid rgba(183, 125, 255, 0.35);
-    padding: 18px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    backdrop-filter: blur(12px);
+    background: #080a10;
+    border-bottom: 1px solid #292d42;
+    padding: 22px 7%;
 }
 
-header h1 {
-    text-align: center;
-    color: #f4d77d;
-    font-size: 28px;
-    letter-spacing: 2px;
-    text-shadow: 0 0 15px rgba(177, 104, 255, 0.7);
-    margin-bottom: 12px;
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
-/* =========================================
+.logo-area img {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.logo-text h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.logo-text p {
+    color: #54d9ff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+/* =========================
    NAVIGATION
-   ========================================= */
+   ========================= */
 
 nav {
+    margin-top: 25px;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 24px;
 }
 
 nav a {
-    color: #e8dff2;
+    color: #aeb3c9;
     text-decoration: none;
-    padding: 8px 14px;
-    border-radius: 20px;
-    font-size: 15px;
-    transition: 0.3s ease;
-}
-
-nav a:hover {
-    color: #fff;
-    background: rgba(132, 67, 190, 0.35);
-    box-shadow: 0 0 14px rgba(168, 91, 255, 0.35);
-}
-
-/* =========================================
-   MAIN CONTENT
-   ========================================= */
-
-main {
-    width: min(1100px, 92%);
-    margin: 45px auto;
-}
-
-main > h1 {
-    text-align: center;
-    color: #f4d77d;
-    font-size: 42px;
-    margin-bottom: 15px;
-    text-shadow: 0 0 18px rgba(174, 93, 255, 0.5);
-}
-
-main > p {
-    text-align: center;
-    max-width: 750px;
-    margin: 0 auto 35px;
-    color: #cfc4d8;
-    font-size: 17px;
-}
-
-/* =========================================
-   STORY SECTIONS / CARDS
-   ========================================= */
-
-main > h3 {
-    margin-top: 28px;
-    padding: 24px 25px 8px;
-    color: #f4d77d;
-    font-size: 25px;
-    background: rgba(24, 15, 35, 0.72);
-    border-left: 3px solid #a75ce8;
-    border-radius: 12px 12px 0 0;
-    box-shadow: 0 0 25px rgba(110, 51, 153, 0.12);
-}
-
-main > h3 + p,
-main > h3 + p + p,
-main > h3 + p + p + p {
-    background: rgba(18, 12, 27, 0.72);
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-main > h3 + p {
-    padding-top: 8px;
-    color: #ddd4e5;
-}
-
-main > h3 + p + p {
-    padding-bottom: 8px;
-    color: #bfa9ce;
-    font-size: 15px;
-}
-
-main > h3 + p + p + p {
-    padding-bottom: 25px;
-    border-radius: 0 0 12px 12px;
-}
-
-/* =========================================
-   LINKS / BUTTONS
-   ========================================= */
-
-a {
-    color: #c58cff;
-    transition: 0.3s ease;
-}
-
-a:hover {
-    color: #f4d77d;
-}
-
-main a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #f4d77d;
-    text-decoration: none;
+    font-size: 18px;
     font-weight: bold;
-    border: 1px solid rgba(244, 215, 125, 0.55);
-    padding: 9px 18px;
-    border-radius: 25px;
-    background: rgba(91, 48, 126, 0.25);
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
-main a:hover {
-    background: rgba(145, 76, 204, 0.45);
-    border-color: #f4d77d;
-    box-shadow: 0 0 18px rgba(175, 91, 255, 0.45);
-    transform: translateY(-2px);
+nav a:hover,
+nav a.active {
+    color: #ffffff;
 }
 
-/* =========================================
-   IMAGES
-   ========================================= */
+/* =========================
+   HERO
+   ========================= */
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
+.hero {
+    min-height: 650px;
+    padding: 90px 7%;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(91, 66, 180, 0.25),
+            transparent 35%
+        ),
+        #101221;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero-label {
+    color: #58ddff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 7vw, 88px);
+    line-height: 1.02;
+    letter-spacing: -3px;
+    margin-bottom: 35px;
+}
+
+.hero p {
+    max-width: 720px;
+    color: #b4b8cc;
+    font-size: 21px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.btn {
+    display: inline-block;
+    padding: 17px 32px;
     border-radius: 14px;
-    border: 1px solid rgba(194, 130, 255, 0.35);
-    box-shadow:
-        0 10px 35px rgba(0, 0, 0, 0.55),
-        0 0 20px rgba(133, 66, 189, 0.2);
+    background: linear-gradient(135deg, #9b68ff, #6841ed);
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 10px 30px rgba(108, 66, 237, 0.25);
+    transition: 0.3s;
 }
 
-/* =========================================
-   STORY CARDS
-   ========================================= */
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(108, 66, 237, 0.4);
+}
+
+/* =========================
+   STORIES
+   ========================= */
+
+.stories {
+    padding: 80px 7%;
+}
+
+.stories h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
 
 .story-card {
-    background: linear-gradient(
-        145deg,
-        rgba(35, 20, 49, 0.95),
-        rgba(12, 8, 18, 0.95)
-    );
-    border: 1px solid rgba(178, 105, 238, 0.28);
+    background: #151827;
+    border: 1px solid #292d42;
     border-radius: 18px;
     padding: 25px;
-    margin: 25px 0;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
-    transition: 0.35s ease;
+    transition: 0.3s;
 }
 
 .story-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(226, 175, 255, 0.65);
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.55),
-        0 0 25px rgba(143, 68, 202, 0.2);
+    transform: translateY(-6px);
+    border-color: #7250e8;
 }
 
-.story-card h2,
+.story-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
 .story-card h3 {
-    color: #f4d77d;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 
 .story-card p {
-    color: #d2c8da;
+    color: #aeb3c9;
 }
 
-/* =========================================
-   FORMS
-   ========================================= */
-
-form {
-    max-width: 650px;
-    margin: 30px auto;
-    background: rgba(20, 13, 29, 0.9);
-    padding: 30px;
-    border-radius: 18px;
-    border: 1px solid rgba(175, 97, 236, 0.3);
-}
-
-label {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 6px;
-    color: #f4d77d;
-}
-
-input,
-textarea,
-select {
-    width: 100%;
-    padding: 13px 15px;
-    background: #0c0910;
-    color: #fff;
-    border: 1px solid #513267;
-    border-radius: 9px;
-    outline: none;
-    font-size: 15px;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-    border-color: #b96cff;
-    box-shadow: 0 0 12px rgba(174, 93, 255, 0.3);
-}
-
-button {
-    margin-top: 20px;
-    padding: 12px 25px;
-    border: 1px solid #d9b75f;
-    border-radius: 25px;
-    background: linear-gradient(135deg, #6d3b91, #32173f);
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 18px rgba(178, 94, 246, 0.45);
-}
-
-/* =========================================
+/* =========================
    FOOTER
-   ========================================= */
+   ========================= */
 
 footer {
-    margin-top: 70px;
-    padding: 30px 20px;
+    padding: 40px 7%;
     text-align: center;
-    background: #07060a;
-    border-top: 1px solid rgba(178, 105, 238, 0.25);
-    color: #988ca2;
-    font-size: 14px;
+    background: #080a10;
+    border-top: 1px solid #292d42;
+    color: #888da3;
 }
 
-/* =========================================
-   MOBILE DESIGN
-   ========================================= */
+/* =========================
+   MOBILE
+   ========================= */
 
 @media (max-width: 700px) {
 
     header {
-        padding: 15px 12px;
+        padding: 18px 22px;
     }
 
-    header h1 {
-        font-size: 21px;
-        letter-spacing: 1px;
+    .logo-area {
+        gap: 12px;
+    }
+
+    .logo-area img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-text h1 {
+        font-size: 22px;
+    }
+
+    .logo-text p {
+        font-size: 11px;
+        letter-spacing: 3px;
     }
 
     nav {
-        gap: 3px;
+        margin-top: 20px;
+    }
+
+    nav ul {
+        gap: 14px 20px;
     }
 
     nav a {
-        font-size: 13px;
-        padding: 7px 9px;
+        font-size: 16px;
     }
 
-    main {
-        width: 92%;
-        margin: 30px auto;
+    .hero {
+        min-height: auto;
+        padding: 70px 25px 80px;
     }
 
-    main > h1 {
-        font-size: 31px;
+    .hero-label {
+        font-size: 12px;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
     }
 
-    main > p {
-        font-size: 15px;
+    .hero h1 {
+        font-size: 48px;
+        line-height: 1.05;
+        letter-spacing: -2px;
+        margin-bottom: 25px;
     }
 
-    main > h3 {
-        font-size: 21px;
-        padding: 20px 18px 8px;
+    .hero p {
+        font-size: 18px;
+        line-height: 1.65;
+        margin-bottom: 30px;
     }
 
-    main > h3 + p,
-    main > h3 + p + p,
-    main > h3 + p + p + p {
-        padding-left: 18px;
-        padding-right: 18px;
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 16px 20px;
     }
 
-    .story-card {
-        padding: 18px;
+    .stories {
+        padding: 60px 25px;
     }
 
-    form {
-        padding: 20px;
-    }
-}
-
-/* =========================================
-   ANIMATION
-   ========================================= */
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(12px);
+    .stories h2 {
+        font-size: 36px;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .story-grid {
+        grid-template-columns: 1fr;
     }
-}
-
-main {
-    animation: fadeIn 0.7s ease;
-}
+   }
